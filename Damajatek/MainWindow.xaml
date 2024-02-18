@@ -1,0 +1,58 @@
+﻿<Window x:Class="Damajatek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Damajatek"
+        mc:Ignorable="d"
+        Title="Dáma játék" Height="450" Width="650" Background="Beige" ResizeMode="CanResizeWithGrip" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*" MinWidth="200"/>
+            <ColumnDefinition Width="160*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,0,0,0" Grid.Column="0" MinWidth="200">
+            <Button Content="Új Játék" MinWidth="180" MinHeight="25" Margin="10,100,0,0" BorderThickness="0" Click="New_Game_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Beige" Offset="1"/>
+                        <GradientStop Color="#FFDB9C60" Offset="0.783"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Betöltés" MinWidth="190" MinHeight="25" Margin="10,25,0,0" BorderThickness="0" Click="Load_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Beige" Offset="1"/>
+                        <GradientStop Color="#FFDB9C60" Offset="0.783"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Ranglista" MinWidth="190" MinHeight="25" Margin="10,25,0,0" BorderThickness="0" Click="Rank_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Beige" Offset="1"/>
+                        <GradientStop Color="#FFDB9C60" Offset="0.783"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Beállítások" MinWidth="190" MinHeight="25" Margin="10,25,0,0" BorderThickness="0" Click="Settings_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Beige" Offset="1"/>
+                        <GradientStop Color="#FFDB9C60" Offset="0.783"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Content="Kilép" MinWidth="190" MinHeight="25" Margin="10,25,0,0" BorderThickness="0" Click="Exit_Click">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Beige" Offset="1"/>
+                        <GradientStop Color="#FFDB9C60" Offset="0.783"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Grid x:Name="Grid" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"></Grid>
+    </Grid>
+</Window>
